@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Persons from "../pages/components/persons";
+import Persons from "./components/Persons";
 
 const members = [
   { name: "としみつ", tel: "090-0000-0000", id: 3 },

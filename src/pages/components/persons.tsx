@@ -6,7 +6,8 @@ type members = {
   id: number;
 };
 
-const Persons: FC<members> = (member) => {
+// exportをつけないとPersons.storiesでエラーが出る。
+export const Persons: FC<members> = (member) => {
   return (
     <>
       <ul>
@@ -23,5 +24,5 @@ const Persons: FC<members> = (member) => {
     </>
   );
 };
-
+// これ書かないと、index.tsxのPersons importでエラーが出る。
 export default Persons;
